@@ -1,19 +1,16 @@
-import { configureStore, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
-import { composeWithDevTools } from 'redux-devtools-extension';
-import { createWrapper } from 'next-redux-wrapper';
-import rootReducer from './reducers';
+// import { createStore } from 'redux';
+// import thunk from 'redux-thunk';
+// import { createWrapper } from 'next-redux-wrapper';
 
-const initialState = {};
+// // const initialState = {};
 
-const middleWare = [thunk];
+// // const middleWare = [thunk];
 
-export const store = configureStore(
-  rootReducer,
-  initialState,
-  composeWithDevTools(applyMiddleware(...middleWare))
-);
+// export const store = createStore(initialState);
 
-const makeStore = () => store;
+// const makeStore = () => store;
 
-export const wrapper = createWrapper(makeStore);
+// export const wrapper = createWrapper(makeStore);
+
+
+// // https://jsonplaceholder.typicode.com/users
