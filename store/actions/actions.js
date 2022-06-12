@@ -1,0 +1,1 @@
+export const GetNames = 'getNames';
